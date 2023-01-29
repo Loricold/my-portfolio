@@ -1,17 +1,22 @@
 :root {
-  --primary-color: #6c63ff;
+  --primary-color: #429ae2;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
-  margin: 100px auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #272142;
+  margin: 40px 0;
 }
 
 h1,
 h2,
 h3 {
   margin: 0;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
 }
 
 h1 {
@@ -19,7 +24,8 @@ h1 {
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 36px;
+  font-weight: 700;
 }
 
 h3 {
@@ -30,6 +36,23 @@ h3 {
 p {
   font-size: 18px;
   line-height: 1.5;
+}
+
+header {
+  padding: 160px 0 160px;
+  margin-bottom: 40px;
+}
+
+.header {
+  background-color: #e8f2f9;
+}
+
+section {
+  margin: 70px 0;
+}
+
+.navigation {
+  background-color: #e8f2f9;
 }
 
 .fixed-top {
@@ -67,12 +90,30 @@ p {
   text-transform: capitalize;
 }
 
-.about-paragraphs {
-  margin: 30px;
+.work-inquiry {
+  background-color: #e8f2f9;
+  padding: 40px 100px;
+  border-radius: 4px;
+  align-items: center;
 }
 
-.about-paragraphs p {
-  margin: 10px;
+.about-title {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.my-photo {
+  max-width: 50%;
+}
+
+.about-paragraphs {
+  font-size: 16px;
+  line-height: 30px;
+  margin: 28px 0 48px;
+}
+
+.project-header {
+  padding: 75px 0 0;
 }
 
 .email-link {
@@ -87,8 +128,21 @@ p {
   text-decoration: underline;
 }
 
+.contact-links {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-links a {
+  margin: 20px 20px;
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
 @media (max-width: 768px) {
+  h1,
   h2,
+  h3,
   p {
     text-align: center;
   }
