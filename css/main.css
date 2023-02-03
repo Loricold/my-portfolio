@@ -97,12 +97,12 @@ section {
   align-items: center;
 }
 
-.about-section h1 {
+.content-container h1 {
   font-size: 56px;
   margin-bottom: 10px;
 }
 
-.about-section h2 {
+.content-container h2 {
   font-size: 18px;
   font-family: "Poppins", sans-serif;
 }
@@ -119,6 +119,10 @@ section {
 
 .project-header {
   padding: 75px 0 0;
+}
+
+.project-description {
+  font-size: 14px;
 }
 
 .email-link {
@@ -145,11 +149,15 @@ section {
 }
 
 @media (max-width: 1000px) {
+  h1 {
+    font-size: 64px;
+  }
+
   header {
     padding: 60px 0 20px;
   }
 
-  .about-section {
+  .content-container {
     text-align: center;
   }
 }
@@ -162,7 +170,7 @@ section {
     text-align: center;
   }
 
-  .about-section {
+  .content-container {
     text-align: center;
   }
 
